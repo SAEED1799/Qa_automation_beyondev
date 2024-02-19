@@ -1,0 +1,74 @@
+html {
+    background-image: url('360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg'); /* Add background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    color: #060303; /* Set text color */
+    font-family: Arial, sans-serif; /* Set the default font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Example: Increase font size for better readability on smaller screens */
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Adjust layout for screens smaller than 480px (small mobile devices) */
+  @media (max-width: 480px) {
+    /* Example: Hide certain elements to simplify the layout */
+    .sidebar {
+      display: none;
+    }
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20;
+    padding: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+form {
+    background-color: #78c1e2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <form id="registration-form" method="POST" action="#">
+        <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <small>Please enter a valid email address.</small>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
+        </div>
+        <div class="form-group">
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthday" name="birthday" min="1924-01-01" max="2006-12-31" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="female">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="agree-terms" name="agree-terms" required>
+            <label for="agree-terms">Agree to Terms</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

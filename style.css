@@ -1,0 +1,86 @@
+/* Global styles */
+
+html {
+    background-image: url('360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg'); /* Add background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    color: #060303; /* Set text color */
+    font-family: Arial, sans-serif; /* Set the default font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Example: Increase font size for better readability on smaller screens */
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Adjust layout for screens smaller than 480px (small mobile devices) */
+  @media (max-width: 480px) {
+    /* Example: Hide certain elements to simplify the layout */
+    .sidebar {
+      display: none;
+    }
+  }
+body {
+    font-family: Arial, sans-serif; /* Set the default font family */
+    margin: 5; /* Remove default margin */
+    padding: 5; /* Remove default padding */
+}
+
+img {
+    max-width: 100%; /* Make sure images don't exceed their container width */
+    height: auto; /* Preserve aspect ratio */
+    display: block; /* Remove default inline display */
+    margin: 10 auto; /* Center image horizontally */
+}
+.circular-image {
+    border-radius: 50%;
+}
+
+section {
+    padding: 30px; /* Add padding to section */
+}
+
+h1 {
+    margin: 5; /* Remove default margin for heading */
+}
+
+/* Specific styles for elements */
+
+p {
+    font-size: 16px; /* Set font size for paragraph text */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 5; /* Remove default padding for unordered list */
+}
+
+li {
+    margin-bottom: 30px; /* Add spacing between list items */
+}
+
+.circular-image {
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px; /* Add some space between images */
+}
+.image-container {
+    display: flex;
+    animation: moveImages 5s linear infinite; /* Apply animation to move images */
+}
+
+@keyframes moveImages {
+    0% {
+        transform: translateX(0); /* Initial position */
+    }
+    50% {
+        transform: translateX(10px); /* Move to the right */
+    }
+    100% {
+        transform: translateX(0); /* Return to initial position */
+    }
+}
