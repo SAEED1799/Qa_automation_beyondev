@@ -1,0 +1,8 @@
+{
+  "HAB_URL": "http://localhost:4444/wd/hub",
+  "user_name": "Saeed",
+  "url" : "https://www.365scores.com/he",
+  "grid": false,
+  "serial" : true,
+  "browser_name": "chrome"
+}
