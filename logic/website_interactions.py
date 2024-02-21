@@ -1,3 +1,6 @@
+from selenium.webdriver import Keys
+
+
 class WebsiteInteractions:
     def __init__(self, driver):
         self.driver = driver
